@@ -1,15 +1,20 @@
-app = "CHANGE-ME"          # fly launch fills this
-primary_region = "fra"
+# fly.toml app configuration file generated for webs-bot on 2026-10-29T21:03:53Z
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'webs-bot'
+primary_region = 'ams'
 
 [build]
 
 [http_service]
   internal_port = 8080
   force_https = true
-  auto_stop_machines = "off"
+  auto_stop_machines = 'off'
   auto_start_machines = false
   min_machines_running = 1
 
 [[vm]]
-  size = "shared-cpu-1x"
-  memory = "256mb"
+  size = 'shared-cpu-1x'
+  memory = '256mb'
